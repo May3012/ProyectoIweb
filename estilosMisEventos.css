@@ -1,0 +1,29 @@
+.main {
+    padding: 20px;
+}
+
+.texto {
+    font-size: 120%;
+}
+
+#triangulo {
+    float: right;
+}
+
+.hover-effect:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 575px) {
+    .texto {
+        font-size: 120%;
+    }
+
+    #triangulo {
+        display: none;
+    }
+
+    #imagenes {
+        width: 10%;
+    }
+}
