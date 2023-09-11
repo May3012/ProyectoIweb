@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semana de Ingeniería</title>
+    <link rel="stylesheet" href="pagina.css">
+</head>
+<body>
+<div class="login-box">
+    <h2>INICIO DE SESIÓN</h2>
+    <br>
+    <img src="Imagen/ola.png" class="img-fluid" alt="...">
+    <form method="get" action="Pagina.html">
+        <div class="user-box">
+            <label for="exampleFormControlInput1" class="form-label">Correo PUCP</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="telito@pucp.edu.pe">
+
+        </div>
+        <div class="user-box">
+            <label>Contraseña</label>
+            <input type="password" name="" required="">
+        </div>
+        <!Este boton permite que pase a la pagina despues de validar los datos>
+        <button type="submit">
+            Ingresar
+        </button>
+
+    </form>
+        <br><br>
+        <div  class="btn-control">
+            <a href="Registro.html">Crear una cuenta</a>
+            <a href="RecuperarContrasenia.html">¿Olvidaste tu contraseña?</a>
+        </div>
+
+
+</div>
+</body>
+</html>
