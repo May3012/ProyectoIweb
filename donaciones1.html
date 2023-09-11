@@ -36,17 +36,6 @@
                         -webkit-transition: opacity 400ms ease-in; 
                         -moz-transition: opacity 400ms ease-in; 
                         transition: opacity 400ms ease-in; 
-                    } 
-                    .close {           
-                        line-height: 7%;  
-                        position: absolute;     
-                        right: 80%;   
-                        text-align: center;     
-                        top: 85%;     
-                        width: 7%;      
-                    }   
-                    .close:hover { 
-                        opacity: 0.5;
                     }
                     .hover-effect:hover {
                         opacity: 0.5;
@@ -128,9 +117,6 @@
         </div>
         <div id="openModal" class="modalDialog overflow-y-auto">    
             <div>       
-                <a href="#close" title="Close" class="close">
-                    <img src="https://www.freeiconspng.com/uploads/arrow-left-icons-free-icons-in-2d--icon-search-engine--5.png" class="img-fluid" alt="">
-                </a> 
                 <div class="container-fluid overflow-auto overflow-x-hidden">
                     <div class="">
                         <div class="row">
@@ -178,13 +164,21 @@
                                 <div style="margin-left: 30%; margin-right: 30%; margin-top: 5%;">
                                     <textarea class="bg-dark-subtle border border-black rounded-pill form-control" id="exampleFormControlTextarea1" placeholder="S/. X" rows="1"></textarea>
                                 </div>
+                                <div class="text-center" style="margin-top: 10%;">
+                                    Atrás
+                                </div>
+                                <a href="#close" title="Close" >
+                                    <img src="https://www.freeiconspng.com/uploads/arrow-left-icons-free-icons-in-2d--icon-search-engine--5.png" class="img-fluid hover-effect" alt="">
+                                </a> 
                             </div>
                             <div class="col-md-6">
                                 <div class="border border-2 rounded-5">
-                                    <div style="margin-top: 5%; margin-bottom: 5%; margin-left: 20%; margin-right: 20%;">
-                                        <img src="https://www.pngall.com/wp-content/uploads/2/Upload-PNG-Image-File.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div role="button" class="bg-primary border rounded d-flex align-items-center justify-content-center" style="margin-right: 40%; margin-left: 40%;" >
+                                    <div style="width: 60%;margin-top: 5%; margin-bottom: 5%; margin-left: 20%; margin-right: 20%;">
+                                        <a href="#!">
+                                            <img src="https://www.pngall.com/wp-content/uploads/2/Upload-PNG-Image-File.png" class="img-fluid hover-effect" alt="">
+                                        </a>
+                                    </div> 
+                                    <div class="d-flex align-items-center justify-content-center" style="margin-right: 40%; margin-left: 40%;" >
                                         Subir captura
                                     </div>
                                 </div>
