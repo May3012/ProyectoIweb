@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semana de Ingeniería</title>
+</head>
+<body>
+<form method="get" action="RegistroFinal.html">
+  <div class="user-box">
+    <label for="exampleFormControlInput1" class="form-label">Nombres y Apellidos</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=">Escribe aquí">
+
+  </div>
+  <div class="user-box">
+    <label for="exampleFormControlInput2" class="form-label">Código PUCP</label>
+    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder=">Escribe aquí">
+  </div>
+  <div class="user-box">
+    <label>Contraseña</label>
+    <input type="password" name="" required="">
+  </div>
+  <div class="user-box">
+    <label>Repetir Constraseña</label>
+    <input type="password" name="" required="">
+  </div>
+
+  <div class="user-box">
+    <input type="checkbox" id="student" value="first_checkbox" /> Alumno
+    <input type="checkbox" id="graduate" value="first_checkbox" /> Egresado
+  </div>
+  <!Este boton permite que pase a la pagina despues de validar los datos>
+  <button type="submit">
+    Aceptar
+  </button>
+
+</form>
+</body>
+</html>
