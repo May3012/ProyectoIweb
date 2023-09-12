@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <style>
+            .texto{
+                font-family: 'Comic Sans MS', sans-serif !important;
+            }
+
+            @media screen and (max-width:1200px) {
+                #desaparecerResponsive{
+                    display: none !important;
+                }
+            }
+
+            @media screen and (max-width:1200px) {
+                #aparecerResponsive{
+                    display: block !important;
+                }
+            }
+
+            @media screen and (min-width:1201px) {
+                #aparecerResponsive{
+                    display: none !important;
+                }
+            }
+
+            .bg-p1{
+                background-image: linear-gradient(rgb(152, 183, 196),skyblue);
+            }
+
+            .bg-p2{
+                background-image: radial-gradient(green,skyblue)
+            }
+
+            .bg-p3{
+                background-image: linear-gradient(orange,yellow);
+            }
+            .bg-p4{
+                background-image: linear-gradient(green,rgb(145, 243, 145));
+            }
+            .hover-effect:hover{
+                opacity: 50% !important;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="container-fluid mt-5">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-xl-8 border border-info bg-p1">
+                        <div class="display-1 text-center texto" style="margin-top: 20px; margin-bottom: 20px;">
+                            Descripción de la actividad
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" style="margin-top: 40px">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-xl-2"></div>
+                    <a class="bg-p3 row col-xl-8 border border-info text-center rounded-pill hover-effect" style="text-decoration: none;" href="#">
+                        <div class="col-1 d-flex align-items-center justify-content-center">
+                            <img src="flechita.png" class="img-fluid" width="50%" id="desaparecerResponsive" alt="">
+                        </div>
+                        <div class="col-4 display-6 d-flex align-items-center justify-content-center texto" style="color: purple">
+                            Fibra tóxica
+                        </div>
+                        <div class="col-1 d-flex align-items-center justify-content-center">
+                            <img src="https://cdn-icons-png.flaticon.com/512/12/12311.png" class="img-fluid" id="desaparecerResponsive" alt="">
+                            <div class="col-1 display-4 d-flex align-items-center justify-content-center texto">
+                                <div id="aparecerResponsive">VS</div>
+                            </div>
+                        </div>
+                        <div class="col-1 display-4 d-flex align-items-center justify-content-center texto" id="desaparecerResponsive">
+                            VS
+                        </div>
+                        <div class="col-4 display-6 d-flex align-items-center justify-content-center texto" style="color: blue;">
+                            Mafia cuántica
+                        </div>
+                        <div class="col-1 d-flex align-items-center justify-content-center">
+                            <img src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Hats-PNG/White_Hat_Transparent_PNG_Clip_Art_Image.png?m=1493607301" class="img-fluid" id="desaparecerResponsive" alt="">
+                        </div>
+                    </a>
+                    <div class="col-xl-2"></div>
+                </div>
+                <div class="row d-flex justify-content-center" style="margin-top: 30px">
+                    <div class="col-xl-3 border border-3 mt-5 bg-dark-subtle">
+                        <div class="row" style="margin-top: 10px; padding: 30px;">
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <img src="https://pnghq.com/wp-content/uploads/icono-de-calendario-png-1008-download-34988.png" class="img-fluid"  alt="">
+                            </div>
+                            <div class="col-10 d-flex align-items-center justify-content-center">
+                                <div class="display-6 texto">Fecha: ___________</div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 30px;">
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <img src="https://images.vexels.com/media/users/3/142363/isolated/preview/76cc00e3681f38ed4956be2394cccd38-reloj-de-pared-plano-de-oficina.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-10 d-flex align-items-center justify-content-center">
+                                <div class="display-6 texto">Hora: ____________</div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 10px; padding: 30px;">
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/7369/7369110.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-10 d-flex align-items-center justify-content-center">
+                                <div class="display-6 texto">Lugar: ___________</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2"></div>
+                    <div class="col-xl-3 border border-3 d-flex align-items-center justify-content-center mt-5 bg-p2" >
+                        <img src="https://files.pucp.education/puntoedu/wp-content/uploads/2021/02/23112551/camponato_voley_03.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" style="margin-top: 40px">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-xl-2"></div>
+                        <a class="bg-p4 row col-xl-8 border border-info text-center rounded-pill hover-effect" style="text-decoration: none;" href="#">
+                            <div class="col-1 d-flex align-items-center justify-content-center">
+                                <img src="flechita.png" class="img-fluid" width="50%" id="desaparecerResponsive" alt="">
+                            </div>
+                            <div class="col-4 display-6 d-flex align-items-center justify-content-center texto" style="color: purple">
+                                Fibra tóxica
+                            </div>
+                            <div class="col-1 d-flex align-items-center justify-content-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/12/12311.png" class="img-fluid" id="desaparecerResponsive" alt="">
+                                <div class="col-1 display-4 d-flex align-items-center justify-content-center texto">
+                                    <div id="aparecerResponsive">VS</div>
+                                </div>
+                            </div>
+                            <div class="col-1 display-4 d-flex align-items-center justify-content-center texto" id="desaparecerResponsive">
+                                VS
+                            </div>
+                            <div class="col-4 display-6 d-flex align-items-center justify-content-center texto" style="color: blue;">
+                                Electroshock
+                            </div>
+                            <div class="col-1 d-flex align-items-center justify-content-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2432/2432746.png" class="img-fluid" id="desaparecerResponsive" alt="">
+                            </div>
+                        </a>
+                    <div class="col-xl-2"></div>
+                </div>
+                <div class="row d-flex justify-content-center" style="margin-top: 30px">
+                    <div class="col-xl-3 border border-3 mt-5 bg-dark-subtle">
+                        <div class="row" style="margin-top: 10px; padding: 30px;">
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <img src="https://pnghq.com/wp-content/uploads/icono-de-calendario-png-1008-download-34988.png" class="img-fluid"  alt="">
+                            </div>
+                            <div class="col-10 d-flex align-items-center justify-content-center">
+                                <div class="display-6 texto">Fecha: ___________</div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 30px;">
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <img src="https://images.vexels.com/media/users/3/142363/isolated/preview/76cc00e3681f38ed4956be2394cccd38-reloj-de-pared-plano-de-oficina.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-10 d-flex align-items-center justify-content-center">
+                                <div class="display-6 texto">Hora: ____________</div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 10px; padding: 30px;">
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/7369/7369110.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-10 d-flex align-items-center justify-content-center">
+                                <div class="display-6 texto">Lugar: ___________</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2"></div>
+                    <div class="col-xl-3 border border-3 d-flex align-items-center justify-content-center mt-5 bg-p2" >
+                        <img src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/315064006_6452508598099692_1010233954259859039_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cd49ab&_nc_ohc=h9XqV0DqPZQAX98QeRp&_nc_ht=scontent-lim1-1.xx&oh=00_AfBgD0cQPjj2GyInLbqdjRZfrdhTC6g7UEYQghoxbZ59LA&oe=650564D7" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
