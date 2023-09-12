@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <link rel="stylesheet"
+    type="text/css" href="css/something.css">
+    <style>
+        body {
+            font-family:'Chewy', cursive, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #63eea4;
+            color: black;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #user-photo {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #000000;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #666;
+        }
+
+        #image-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #support-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #support-button:hover {
+            background-color: #0056b3;
+        }
+        .fixed-dimensions-image {
+            width: 30px; /* Tamaño deseado */
+            height: 30px; /* Tamaño deseado */
+        }
+        .column {
+            flex: 0.14;
+            padding: 0.5px;
+        }
+
+        .sub-columns {
+            display: flex;
+            flex-direction: row;
+        }
+        .sub-column {
+            flex: 1;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="dropdown">
+        <img src="https://e7.pngegg.com/pngimages/212/622/png-clipart-hamburger-button-computer-icons-menu-drop-down-list-others-miscellaneous-angle.png" class="fixed-dimensions-image" alt="">
+        <span> Menú </span>
+            <div class="dropdown-content">
+                <a href="#">Mi cuenta</a>
+                <a href="#">Actividades</a>
+                <a href="#">Mis Eventos</a>
+                <a href="#">Mis Donaciones</a>
+            </div>
+    </div>
+    <nav>
+        <ul>
+            <li> ⎛⎝(•ⱅ•)⎠⎞ Actividades ⎛⎝(•ⱅ•)⎠⎞ </li>
+        </ul>
+    </nav>
+    <div class="column sub-columns">
+        <!-- Subcolumna 1 -->
+        <div class="sub-column">
+            <img src="https://cdn-icons-png.flaticon.com/512/56/56805.png" class="fixed-dimensions-image" alt="">
+        </div>
+        <!-- Subcolumna 2 -->
+        <div class="sub-column">
+            <div class="col-12 d-flex justify-content-center">
+                <img src="https://cdn-icons-png.flaticon.com/128/310/310818.png" class="fixed-dimensions-image" alt="">
+            </div>
+            <div class="col-12 text-center">
+                <span>Josh</span>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <h1>Título de la Página</h1>
+    <p>Contenido de la página.</p>
+    <div id="image-container">
+        <img id="changing-image" src="image1.jpg" alt="Imagen Cambiante">
+    </div>
+    <button id="support-button">Quiero apoyar</button>
+</div>
+<script>
+    const images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
+    let currentImageIndex = 0;
+
+    function changeImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        document.getElementById('changing-image').src = images[currentImageIndex];
+    }
+
+    setInterval(changeImage, 3000); // Cambia la imagen cada 3 segundos
+</script>
+</body>
+</html>
+
+
+
+
+
+//css
+.container-fluid {
+    padding: 0;
+}
+
+.menu {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+.menu img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
