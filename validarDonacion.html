@@ -20,23 +20,25 @@
                             <div class="row text-center m-3"><div>Fecha de pago: 10/09/2023</div></div>
                             <div class="row text-center m-3"><div>Monto ingresado: 120 soles</div></div>
                         </div>
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-1" id="espaciado"></div>
+                        <div class="col-sm-6 mb-2" id="espaciado">
                             <div class="row">
                                 <div class="col-sm-1"></div>
                                 <div class="col-sm-10">
                                     <div class="row text-center border border-dark rounded-5 recuadro d-flex align-items-center"><div>Imagen subida por el usuario</div></div>
                                     <div class="row text-center fw-bold mt-3"><div>¿Es correcto el monto?</div></div>
-                                    <div class="row text-center border border-dark rounded-3 recuadro1 mt-3 ms-5 me-5 d-flex align-items-center"><div class="btn btn-primary">Confirmar pago</div></div>
+                                    <div class="row text-center rounded-3 recuadro1 mt-3 ms-4 me-4 d-flex align-items-center" id="cuadro"><div class="btn btn-primary" id="texto">Confirmar pago</div></div>
                                     <div class="row border border-dark mt-3 mb-3"></div>
                                 </div>
-                                <div class="col-sm-1"></div>
+                                <div class="col-sm-1" id="espaciado"></div>
                             </div>
-                            <div class="row text-center d-flex align-items-center">
-                                <div class="col">
+                            <div class="row text-center d-flex align-items-center"">
+                                <div class="col-sm-6">
                                     Ingrese el monto correcto:
-                                    <input class="validanumericos rounded-3 p-2 ms-3" style="width: 15%;" type="text">
-                                    <div class="btn btn-primary ms-5">Confirmar</div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input class="validanumericos rounded-3 p-2" style="width: 75px;" type="text">
+                                    <div class="btn btn-primary" id="recuadro">Confirmar</div>
                                 </div>
                             </div>
                         </div>
