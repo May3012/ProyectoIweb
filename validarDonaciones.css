@@ -5,3 +5,26 @@
 .recuadro1 {
     height: 40px;
 }
+
+@media screen and (max-width: 1098px) {
+    #recuadro {
+        margin-top: 5px;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    #espaciado {
+        margin-top: 10px;
+    }
+    #cuadro {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+@media screen and (max-width: 836px) {
+    #texto {
+        font-size: 70%;
+    }
+}
